@@ -4,7 +4,7 @@ Source: [Project Euler: Problem 723](https://projecteuler.net/problem=723)
 
 ### Challenge
 
-A pythagorean triangle with catheti `a` and `b` and hypotenuse `c` is characterized by the well-known equation <img src="http://www.sciweavers.org/tex2img.php?eq=a%5E%7B2%7D%2Bb%5E%7B2%7D%3Dc%5E%7B2%7D&bc=Transparent&fc=Black&im=png&fs=12&ff=arev&edit=0" alt="a^{2}+b^{2}=c^{2}" />. However, this can also be formulated differently:
+A pythagorean triangle with catheti `a` and `b` and hypotenuse `c` is characterized by the well-known equation `a²+b²=c²`. However, this can also be formulated differently:
 
 When inscribed into a circle with radius `r`, a triangle with sides `a`, `b` and `c` is pythagorean, if and only if `a²+b²+c²=8r²`.
 
