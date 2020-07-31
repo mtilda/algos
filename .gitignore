@@ -1,5 +1,7 @@
-# ignore files without extentions
+# Ignore files without extentions
 *
 !/**/
 !*.*
 
+# C/C++ settings
+settings.json
