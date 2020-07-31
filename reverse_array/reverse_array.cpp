@@ -18,7 +18,7 @@ void print_array( int* array, int array_size ) {
 
 int* reverse_array( int* array, int array_size ) {
 
-    // Store array to a new address, so we don't mutate the original
+    // Store array values to a new address, so we don't mutate the original
     int *reversed_array = array;
 
     // Point to elements at the start and end of the array
