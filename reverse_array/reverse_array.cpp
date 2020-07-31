@@ -6,7 +6,7 @@ using namespace std;
 
 void print_array( int* array, int array_size ) {
     
-    for (int i = 0; i < array_size; i++) {
+    for ( int i = 0; i < array_size; i++ ) {
 
         cout << array[i] << " ";
     
@@ -15,23 +15,31 @@ void print_array( int* array, int array_size ) {
     cout << endl;
 }
 
+
 int* reverse_array( int* array, int array_size ) {
 
+    // Store array to a new address, so we don't mutate the original
     int *reversed_array = array;
 
+    // Point to elements at the start and end of the array
     int *start_ptr = reversed_array;
     int *end_ptr = reversed_array + array_size - 1;
     
-    while( start_ptr < end_ptr ) {
+    while ( start_ptr < end_ptr ) {
+
+        // Swap values at pointer addresses
         int temp = *start_ptr;
         *start_ptr = *end_ptr;
         *end_ptr = temp;
+
+        // Increment/Decrement pointers
         start_ptr++;
         end_ptr--;
     }
 
     return reversed_array;
 }
+
 
 int main(void) {
 
@@ -42,4 +50,5 @@ int main(void) {
     int* b = reverse_array( a, 8);
 
     print_array(b, 8);
+
 }
