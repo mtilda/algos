@@ -25,6 +25,7 @@ int* reverse_array( int* array, int array_size ) {
     int *start_ptr = reversed_array;
     int *end_ptr = reversed_array + array_size - 1;
     
+    // Until pointers converge at middle element
     while ( start_ptr < end_ptr ) {
 
         // Swap values at pointer addresses
@@ -47,7 +48,7 @@ int main(void) {
     
     print_array(a, 8);
 
-    int* b = reverse_array( a, 8);
+    int* b = reverse_array(a, 8);
 
     print_array(b, 8);
 
